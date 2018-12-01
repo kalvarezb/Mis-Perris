@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        {% load static %}
         <meta charset="utf-8">
         <title>Mis Perris</title>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="css/flexboxgrid.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
+        <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -16,7 +17,7 @@
                 <header class="row-flex">
                   <div class="col-xs-12">
                     <div class="header">
-                        <a href="index.html"> <img src="img/logo.png" alt="Logo Mis Perris" id="logo"></a>
+                        <a href="index.html"> <img src="{% static 'img/logo.png" alt="Logo Mis Perris" id="logo"></a>
                     </div>
                   </div>
                 </header>
@@ -82,7 +83,7 @@
                               <label for="telefono">Telefono</label>
                             </div>
                             <div class="input-field col s6">
-                                    <input id="rut" name="name" type="text" required oninput="checkRut(this)" class="validate">
+                                    <input id="rut" name="rut" type="text" required oninput="checkRut(this)" class="validate">
                                     <label for="rut">Rut</label>
                             </div>
                     </div>
@@ -131,7 +132,7 @@
                         <label for="fecha_nacimiento">Fecha de nacimiento</label>
                       </div>
                       <div class="input-field col s6">
-                            <select id="tipo_vivienda" name="fecha_nacimiento" required>
+                            <select id="tipo_vivienda" name="tipo_vivienda" required>
                               <option value="" disabled selected>Seleccionar</option>
                               <option value="1">Casa con patio grande</option>
                               <option value="2">Casa con patio pequeño</option>
@@ -143,7 +144,7 @@
                   </div>
                   <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
                   </button>
-                  <script src="validarRUT.js"></script>
+                  <script src="{% static 'validarRUT.js' %}"></script>
                 </form>
               </div>
 

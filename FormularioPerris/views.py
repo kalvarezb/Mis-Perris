@@ -21,4 +21,4 @@ def formulario(request):
     tipoVivienda = request.POST.get('tipo_vivienda',0)
     adoptante = Adoptante(correo = correo, rut = rut, nombres = nombres, pefechaNacimiento = fechaNacimiento, telefono = telefono, region = region, ciudad = ciudad,tipoVivienda = tipoVivienda)
     adoptante.save()
-    return render(request, 'formulario.html')
+    return render(request, 'formulario.html', {})
