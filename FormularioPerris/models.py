@@ -14,10 +14,10 @@ class Rescatado(models.Model):
 
 class Adoptante(models.Model):
     correo = models.CharField(max_length=60)
-    run =  models.CharField(max_length=11)
-    nombreCompleto = models.CharField(max_length=90)
+    rut =  models.CharField(max_length=11)
+    nombres = models.CharField(max_length=90)
     pefechaNacimiento = models.CharField(max_length=12)
     telefono = models.CharField(max_length=12)
     region = models.CharField(max_length=50)
-    comuna = models.CharField(max_length=30)
+    ciudad = models.CharField(max_length=30)
     tipoVivienda= models.CharField(max_length=50)
