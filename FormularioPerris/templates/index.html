@@ -176,28 +176,30 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col s4">
-      </div>
-      <div class="col s4">
-      </div>
-      <div class="col s4">
-    </div> 
-      </div>
-    </div>
-  </div>
-      <footer id="credits">
-        <p>Latitud: {{latitud}} Longitud: {{longitud}}</p>
-        <p>IP: {{ip}}</p>
+  <footer class="page-footer teal lighten-2">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="white-text">Gracias por visitarnos desde {{ciudad}}, {{pais}} {{bandera}} !</h5>
+              <p>Tu IP: {{ip}}</p>
+              <p>Area: {{region}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Mis Perris
+          </div>
+        </div>
       </footer>
 
       <script>
             $('.carousel').carousel({  
             });
-            setTimeout(autoplay, 4500);
+            setTimeout(autoplay, 3000);
             function autoplay() {
                 $('.carousel').carousel('next');
-                setTimeout(autoplay, 4500);
+                setTimeout(autoplay, 3000);
             };
             $('.carousel.carousel-slider').carousel({
                 fullWidth: true,
