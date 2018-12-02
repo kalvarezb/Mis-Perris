@@ -7,44 +7,45 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
         <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="screen,projection" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
   <body>
-        <div class="container-flex">
-                <header class="row-flex">
-                  <div class="col-xs-12">
-                    <div class="header">
-                        <a href="index.html"> <img src="{% static 'img/logo.png" alt="Logo Mis Perris" id="logo"></a>
-                    </div>
-                  </div>
-                </header>
-            
-                <div class="row-flex principal">
-                  <div class="col-xs-12 col-md-3 first-md">
-                    <div class="menu">
-                      <a href="index.html" class="menu-link">inicio</a>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-md-3 between-md">
-                    <div class="menu">
-                      <a href="#coach" class="menu-link">quienes somos</a>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-md-3 between-md">
-                    <div class="menu">
-                      <a href="#eetcafe" class="menu-link">servicios</a>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-md-3 last-md">
-                    <div class="menu">
-                      <a href="#" class="menu-link">contáctanos</a>
-                    </div>
-                  </div>
-                </div>
+      <div class="container-flex teal lighten-2">
+          <header class="row-flex">
+            <div class="col-xs-12">
+              <div class="header center-align">
+                  <a href="/"> <img src="{% static 'img/logo.png' %}" alt="Logo Mis Perris" id="logo"></a>
               </div>
+            </div>
+          </header>
+    
+          <div class="row-flex">
+            <div class="col-xs-12 col-md-3 first-md">
+              <div class="menu">
+                    <h4><a href="/" class="white-text center-align">inicio</a></h4>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3 between-md">
+              <div class="menu">
+                <h4><a href="#" class="white-text center-align">quienes somos</a></h4>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3 between-md">
+              <div class="menu">
+                <h4><a href="#" class="white-text center-align">servicios</a></h4>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3 last-md">
+              <div class="menu">
+               <h4><a href="formulario" class="white-text center-align">adopta!</a></h4> 
+              </div>
+            </div>
+          </div>
+      </div>
 
         <div class="row">
                 <script>
@@ -79,7 +80,7 @@
                     </div>
                     <div class="row">
                             <div class="input-field col s6">
-                              <input id="telefono" name="telefono" type="telefono" class="validate" required>
+                              <input id="telefono" name="telefono" type="number" class="validate" required>
                               <label for="telefono">Telefono</label>
                             </div>
                             <div class="input-field col s6">
@@ -147,7 +148,6 @@
                   <script src="{% static 'validarRUT.js' %}"></script>
                 </form>
               </div>
-
   </body>
 
 </html>

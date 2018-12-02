@@ -6,7 +6,7 @@ from  .models import Adoptante
 # Create your views here.
 
 def index(request):
-    response = requests.get('http://api.ipstack.com/check?access_key=ed45289eb6aa84378442d6c312320945')
+    response = requests.get('http://api.ipstack.com/check?access_key=d4ddfcc9021c85fc9efaa6cd21b96f8b')
     data = response.json()
     return render(request,'index.html',{'latitud': data['latitude'],'longitud': data['longitude'],'ciudad': data['city'],'region': data['region_code'],'ip': data['ip'], 'pais': data['country_name'] })
 
