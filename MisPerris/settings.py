@@ -25,7 +25,7 @@ SECRET_KEY = '&a5ro-wvqq#7mk27*%8kfu1&_=(ujvl-=d#zw9q8%9avv!hxvk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ettin20.pythonanywhere.com','localhost']
+ALLOWED_HOSTS = ['ettin20.pythonanywhere.com','localhost', '127.0.0.1']
 
 
 # Application definition
